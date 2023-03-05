@@ -115,7 +115,8 @@ function deleteTodo(id) {
   });
   localStorage.setItem("taskDescription", JSON.stringify(deletedDesc));
 
-  showTodo();
+ location.reload();
+  localStorage.setItem("reload", "false");
 }
 
 
