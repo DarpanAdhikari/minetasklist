@@ -34,6 +34,7 @@ body::-webkit-scrollbar {
   background: #b48321;
   padding: 5px;
   border-radius: 5px;
+  z-index: 11;
 }
 button,
 h2,
