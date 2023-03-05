@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Darpan Adhikari">
+  <meta name="description" content="todo make with description field">
+  <link rel="icon" href="https://darpanadhikari.github.io/portfolio/darpan.png">
+  <link rel="stylesheet" href="additional/todo.css">
+  <script src="additional/todo.js" defer></script>
+  <title>Task List</title>
+</head>
+
+<body>
+  <div class="lockedScreen">
+    <div class="pinEnter">
+      <h2>Enter Your Pin:</h2>
+      <input type="text"> <br>
+      <a href="">Remove Password</a>
+    </div>
+    <div class="remove">
+      <label>Authentication data:-</label>
+      <input type="text" id="auth">
+    </div>
+  </div>
+  <div class="lockSetting">
+    <button id="setBtn">Set Lock Screen</button>
+    <div class="lockData">
+      <h2>Lock Screen Setting</h2>
+      <span class="drp close">&times;</span>
+      <div class="inpField">
+        <label>Your Pin :-</label>
+        <input type="text" inputmode="numeric" placeholder="*Set lock pin">
+        <label>Authentication data:-</label>
+        <input type="text" inputmode="numeric" placeholder="*number for reset">
+        <button>Set</button>
+        <p id="status" style="color: #0505cf; font-size: 23px; font-weight: 600;">not set</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>Task List</h3>
+    <div class="taskheader">
+      <input type="text" id="title" placeholder="Title of task">
+      <textarea id="task" rows="3" placeholder="Descrption of task (optional)"></textarea>
+      <button class="submit">Add Task</button>
+    </div>
+    <div class="todoHead">
+      <h2>Todos</h2>
+    </div>
+    <div class="addedTask">
+
+    </div>
+  </div>
+  <div class="dataViewer">
+    <span class="drp close">&times;</span>
+    <p></p>
+    <button class="copy">Copy</button>
+  </div>
+  <p class="information">Note : This website works on client side data base so you don't need to worry about your tata leakage. Use lock facility to keep your data private..🥰</p>
+</body>
+
+</html>
