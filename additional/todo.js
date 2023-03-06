@@ -28,6 +28,29 @@ window.onload = () => {
   }, 1000);
 }
 
+// quotes generator-------------------------
+let quoteHolder = document.querySelector(".topInspiration .inspiration");
+function getQuotes() {
+  fetch('https://quotable.io/random')
+    .then(data => data.json())
+    .then(item => {
+      let len = item.content.length;
+        typeWriter(item.content,len);
+    });
+  }
+  getQuotes();
+
+  var i = 0;
+  function typeWriter(data,length) {
+    if (i < length) {
+      quoteHolder.textContent += data.charAt(i);
+      i++;
+      setTimeout(() => typeWriter(data, i + 1), 100);
+    }
+  }
+
+// body script or todo scripts
+
 Title.oninput = () => {
   if (Title.value !== "") {
     submitTask.disabled = false;
