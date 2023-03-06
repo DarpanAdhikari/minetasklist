@@ -20,6 +20,24 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+.topInspiration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  text-align: center;
+}
+.inspiration{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px #fff;
+  user-select: none;
+}
+
 .information{
   position: absolute;
   left: 0;
@@ -52,7 +70,8 @@ h5 {
   box-shadow: 1px 2px 4px #000;
   transition: all .7s linear;
   background: linear-gradient(181deg, #6be926, #b87f9d, #ce676a, #910fd6) no-repeat;
-    margin-bottom: 40px;
+   margin-bottom: 40px;
+   margin-top: 40px;
 }
 
 .container h3 {
@@ -78,6 +97,7 @@ h5 {
 }
 
 .lockSetting button {
+  margin-top: 40px;
   padding: 7px;
   font-size: 20px;
   font-weight: 600;
