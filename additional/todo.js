@@ -191,6 +191,7 @@ lockSettingBtn[1].addEventListener("click", () => {
     if (localStorage.getItem("lockPin") !== null) {
       document.querySelector("#status").textContent = 'Success';
       lockInpField.classList.remove("active");
+      lockSettingBtn[0].style.display = "none";
       setTimeout(() => {
         document.querySelector("#status").textContent = '';
       }, 10000);
