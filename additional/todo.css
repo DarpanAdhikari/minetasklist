@@ -52,6 +52,7 @@ h5 {
   box-shadow: 1px 2px 4px #000;
   transition: all .7s linear;
   background: linear-gradient(181deg, #6be926, #b87f9d, #ce676a, #910fd6) no-repeat;
+    margin-bottom: 40px;
 }
 
 .container h3 {
@@ -386,4 +387,28 @@ h5 {
   .todoList {
     max-width: 400px;
   }
+}
+
+
+/* footer part */
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+footer span{
+  font-style: italic; font-size: small; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer span a{
+  color: crimson;
+}
+footer span a:hover{
+  text-decoration: underline;
 }
