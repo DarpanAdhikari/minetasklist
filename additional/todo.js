@@ -127,7 +127,12 @@ function showTodo() {
   });
   outPutField.innerHTML = output;
 }
-
+document.querySelectorAll(".todoList p").forEach(paragr=>{
+  paragr.onclick=()=>{
+    navigator.clipboard.writeText(paragr.textContent);
+    alert(`Copied:- ${paragr.textContent}`);
+  }
+});
 function deleteTodo(id) {
   let deletedTitle = taskTitle.filter((data, index) => {
     return index !== id;
